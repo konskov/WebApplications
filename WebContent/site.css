@@ -1,0 +1,136 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #808080;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ff0080;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.search {
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-size: contain;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	background-image: url(https://img.icons8.com/cotton/64/000000/search--v2.png);
+	background-position: center left; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	transition: width 0.4s ease-in-out;
+}
+
+#results {
+	width: 70%;
+	border-collapse: collapse;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 1px;
+  padding-top: 10x;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#results th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #bcbdda;
+  color: white;
+  font-size: 20px;
+}
+#results td{
+	padding-top: 1em;
+	 padding-bottom: 1em;
+	 font-size: 18px;
+}
+#results tr{
+	text-align: center;
+}
+#results tr:hover{
+	background: #f2f2f2;
+}
+
+#total_studies {
+	color: black;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+#about {
+	color: black;
+}
+
+#about td, #about th {
+  border: 1px solid black;
+  padding: 1px;
+  padding-top: 10x;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#about th {
+	padding: 0.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #c0c0c0;
+  color: black;
+  font-size: 20px;
+}
+#about td{
+	padding-top: 0.5em;
+	 padding-bottom: 0.5em;
+	 font-size: 18px;
+	 padding: 0.5em;
+}
+
+
+#search_term {
+	text-decoration: underline black solid;
+}
+
+#contact {
+	color: black;
+}
+
+
+#contact td:first-child{
+	color: #ff0080;
+}
+
+h4 {
+	font-weight: normal;
+	color: black;
+	font-size: 16px;
+}
+
+

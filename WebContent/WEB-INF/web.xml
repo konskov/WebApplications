@@ -1,0 +1,25 @@
+<element>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+<display-name>Conditions</display-name>
+  <description>
+    A trivial web application used as an introduction to webapps
+  </description>
+
+  <servlet>
+    <servlet-name>EnterConditionServlet</servlet-name>
+    <servlet-class>com.webapp.EnterConditionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EnterConditionServlet</servlet-name>
+    <url-pattern>/EnterCondition</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
+</element>
