@@ -8,3 +8,5 @@
 Θα χρησιμοποιηθεί η Java όπου είναι δυνατόν.
 Για τη βάση δεδομένων θα χρησιμοποιηθεί η MySQL.
 
+Παρουσίαση βίντεο του project βρίσκεται εδώ: https://drive.google.com/file/d/1qPuCbFH5qfppsrXlZJiddjx_Nfm_7vMR/view?usp=sharing
+
