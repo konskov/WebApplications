@@ -21,7 +21,7 @@ public class ConditionService {
 	// private DataSource dataSource;
 	private static final String url = "jdbc:mysql://localhost:3306/app_prog";
 	private static final String username = "root";
-	private static final String password = "ks110697";
+	private static final String password = "root";
 	
 	public HashMap<String, Integer> getPatientTypes(String condition) throws SQLException, ClassNotFoundException{
 		Class.forName("com.mysql.jdbc.Driver");
@@ -34,7 +34,7 @@ public class ConditionService {
 			connection = DriverManager.getConnection(url, username, password);
 						
 			query = "SELECT enrollment_type, sum(enrollment_number) " +
-					"FROM copy_table " +
+					"FROM allxml " +
 					"WHERE mesh_terms like " + "'%" + condition + "%' " +
 					"GROUP BY enrollment_type";
 			statement = connection.prepareStatement(query);
@@ -47,7 +47,7 @@ public class ConditionService {
 			if (rs != null) rs.close();
 			if (statement != null) statement.close();
 			
-			query = "SELECT count(*) from copy_table where mesh_terms like "+
+			query = "SELECT count(*) from allxml where mesh_terms like "+
 					"'%" + condition + "%'";
 			statement = connection.prepareStatement(query);
 			rs = statement.executeQuery();
